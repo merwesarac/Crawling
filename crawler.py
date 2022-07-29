@@ -16,8 +16,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 import pandas as pd
-browser = webdriver.Chrome('C:/Users/msarac/Downloads/chromedriver_win32/chromedriver.exe')
-browser.get('https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops')
+browser = webdriver.Chrome('chromedriver.exe')
+browser.get('https://webscraper.io/test-sites...')
 wait = WebDriverWait(browser, 10)
 
 try:
@@ -44,7 +44,7 @@ for car in cars:
      print(desc)
      print(prop)
 
-     #div.card-content.col.s12.m7.l8
+     
      
      
 df = pd.DataFrame(list(zip(desc_list,prop_list)),  columns=['car','prop'])
